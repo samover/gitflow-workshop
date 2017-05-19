@@ -4,6 +4,7 @@
 
 - https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow
 - https://danielkummer.github.io/git-flow-cheatsheet/
+- https://www.cheatography.com/mikesac/cheat-sheets/gitflow/
 
 ## Principles
 
@@ -26,6 +27,8 @@
     4) `git branch -d myfeature`
     5) `git push origin develop`
 
+![](resources/mikesac_1486319464_Gitflow-Feature.png?raw=true)
+
 - STEPS FOR A RELEASE - EVERY COMMIT ON MASTER IS A NEW RELEASE
     1) `git checkout -b release-1.2 develop`
     2) bump version to `1.2` (`package.json`)
@@ -40,8 +43,12 @@
     11) git push tags
     11) `git branch -d release-1.2`
 
+![](resources/mikesac_1486319485_Gitflow-Release.png?raw=true)
+
 - STEPS FOR A HOTFIX: same steps as for a release branch but
     - use `hotfix` prefix: `bugfix-1.2.1` // NB: semantic versioning
+
+![](resources/mikesac_1486319517_Gitflow-Hotfix-Simple.png?raw=true)
 
 ## DEPLOY
 
@@ -55,4 +62,3 @@
     - split from and merged back into `develop`
 
 - `hotfixes` are split from and merged back into `master`
-
