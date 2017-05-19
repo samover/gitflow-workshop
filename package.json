@@ -1,7 +1,0 @@
-{
-  "name": "git-flow",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "samover <samuel.overloop@gmail.com>",
-  "license": "MIT"
-}
